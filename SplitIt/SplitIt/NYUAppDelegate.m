@@ -7,11 +7,14 @@
 //
 
 #import "NYUAppDelegate.h"
+#import "NYUTableViewController.h"
 
 @implementation NYUAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NYUTableViewController* table = [[NYUTableViewController alloc]init];
+    //self.window.rootViewController=table;
     // Override point for customization after application launch.
     return YES;
 }

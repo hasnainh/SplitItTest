@@ -12,6 +12,9 @@
 
     NSMutableArray* randomInt;
     
+    NSMutableString* urlWithID;
+    NSNumber *tableNumber;
+    
 }
 
 

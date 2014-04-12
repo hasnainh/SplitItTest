@@ -11,17 +11,28 @@
 #import <Firebase/Firebase.h>
 
 @interface NYUViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *randomIDField;
+
+
 
 @end
 
 @implementation NYUViewController
+
+
+
 - (IBAction)generateRandomInt:(id)sender {
     int randomIndex= arc4random() % [randomInt count];
     NSNumber* remove= [randomInt objectAtIndex:randomIndex];
     [randomInt removeObjectAtIndex:randomIndex];
     
-    [_randomIDField setText:[NSString stringWithFormat:@"%@", remove]];
+    tableNumber=remove; //This is to set the const table number
+    
+    
+    [urlWithID appendString:[NSString stringWithFormat:@"%@", remove]];
+    //NSLog(urlWithID);
+
+    
+    
 }
 
 - (void)viewDidLoad
@@ -33,18 +44,13 @@
         [randomInt addObject:[NSNumber numberWithInt:i]];
     }
     
+    urlWithID= [[NSMutableString alloc]initWithString:@"https://cs394.firebaseio.com/"];
+    
+    
+    
 //    // Create a reference to a Firebase location
 //    Firebase* f = [[Firebase alloc] initWithUrl:@"https://cs394.firebaseio.com/"];
-//    
-//    // Write data to Firebase
-//    //[f setValue:@"Do you have data? You'll love Firebase."];
-//    
-//    // Read data and react to changes
-//    [f observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
-//        NSLog(@"%@ -> %@", snapshot.name, snapshot.value);
-//        [_randomIDField setText:snapshot.value];
-//    }];
-    
+//
 }
 
 - (void)didReceiveMemoryWarning

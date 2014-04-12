@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72171A818F7327D00A75369 /* NYUTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72171A718F7327D00A75369 /* NYUTableViewController.m */; };
 		D773B18818F09A19003D49C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B18718F09A19003D49C2 /* Foundation.framework */; };
 		D773B18A18F09A19003D49C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B18918F09A19003D49C2 /* CoreGraphics.framework */; };
 		D773B18C18F09A19003D49C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B18B18F09A19003D49C2 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D72171A618F7327D00A75369 /* NYUTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUTableViewController.h; sourceTree = "<group>"; };
+		D72171A718F7327D00A75369 /* NYUTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUTableViewController.m; sourceTree = "<group>"; };
 		D773B18418F09A19003D49C2 /* SplitIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D773B18718F09A19003D49C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D773B18918F09A19003D49C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +149,8 @@
 				D773B1A018F09A19003D49C2 /* NYUViewController.m */,
 				D773B1A218F09A19003D49C2 /* Images.xcassets */,
 				D773B18E18F09A19003D49C2 /* Supporting Files */,
+				D72171A618F7327D00A75369 /* NYUTableViewController.h */,
+				D72171A718F7327D00A75369 /* NYUTableViewController.m */,
 			);
 			path = SplitIt;
 			sourceTree = "<group>";
@@ -227,6 +232,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jaimin Doshi";
 				TargetAttributes = {
+					D773B18318F09A19003D49C2 = {
+						DevelopmentTeam = 6QN349HHUB;
+					};
 					D773B1A718F09A1A003D49C2 = {
 						TestTargetID = D773B18318F09A19003D49C2;
 					};
@@ -280,6 +288,7 @@
 			files = (
 				D773B19418F09A19003D49C2 /* main.m in Sources */,
 				D773B19818F09A19003D49C2 /* NYUAppDelegate.m in Sources */,
+				D72171A818F7327D00A75369 /* NYUTableViewController.m in Sources */,
 				D773B1A118F09A19003D49C2 /* NYUViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +426,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jaimindoshi/Desktop,
@@ -426,6 +437,7 @@
 				INFOPLIST_FILE = "SplitIt/SplitIt-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -435,6 +447,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jaimindoshi/Desktop,
@@ -444,6 +458,7 @@
 				INFOPLIST_FILE = "SplitIt/SplitIt-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -509,6 +524,7 @@
 				D773B1BB18F09A1A003D49C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D773B1BC18F09A1A003D49C2 /* Build configuration list for PBXNativeTarget "SplitItTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +533,7 @@
 				D773B1BE18F09A1A003D49C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
