@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface NYUTableViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet UITableView *userName;
 
 @end

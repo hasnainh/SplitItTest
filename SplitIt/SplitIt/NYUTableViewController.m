@@ -9,7 +9,7 @@
 #import "NYUTableViewController.h"
 #import "NYUViewController.h"
 
-@interface NYUTableViewController ()
+@interface NYUTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -45,7 +45,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
     return 0;
 }

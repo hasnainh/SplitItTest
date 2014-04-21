@@ -15,7 +15,6 @@
 		D773B19418F09A19003D49C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D773B19318F09A19003D49C2 /* main.m */; };
 		D773B19818F09A19003D49C2 /* NYUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D773B19718F09A19003D49C2 /* NYUAppDelegate.m */; };
 		D773B19B18F09A19003D49C2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D773B19918F09A19003D49C2 /* Main_iPhone.storyboard */; };
-		D773B19E18F09A19003D49C2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D773B19C18F09A19003D49C2 /* Main_iPad.storyboard */; };
 		D773B1A118F09A19003D49C2 /* NYUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D773B1A018F09A19003D49C2 /* NYUViewController.m */; };
 		D773B1A318F09A19003D49C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D773B1A218F09A19003D49C2 /* Images.xcassets */; };
 		D773B1AA18F09A1A003D49C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B1A918F09A1A003D49C2 /* XCTest.framework */; };
@@ -23,12 +22,14 @@
 		D773B1AC18F09A1A003D49C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B18B18F09A19003D49C2 /* UIKit.framework */; };
 		D773B1B418F09A1A003D49C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D773B1B218F09A1A003D49C2 /* InfoPlist.strings */; };
 		D773B1B618F09A1A003D49C2 /* SplitItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D773B1B518F09A1A003D49C2 /* SplitItTests.m */; };
-		D773B1C018F0A91F003D49C2 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B1BF18F0A91F003D49C2 /* Firebase.framework */; };
 		D773B1C218F0A99C003D49C2 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B1C118F0A99C003D49C2 /* libicucore.dylib */; };
 		D773B1C418F0A9A9003D49C2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B1C318F0A9A9003D49C2 /* libc++.dylib */; };
 		D773B1C618F0A9B1003D49C2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B1C518F0A9B1003D49C2 /* CFNetwork.framework */; };
 		D773B1C818F0A9B8003D49C2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B1C718F0A9B8003D49C2 /* Security.framework */; };
 		D773B1CA18F0A9C2003D49C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B1C918F0A9C2003D49C2 /* SystemConfiguration.framework */; };
+		ED5B1AC11905A5EC007EF3AE /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5B1AC01905A5EC007EF3AE /* Firebase.framework */; };
+		ED5B1AC41905ABF2007EF3AE /* NYUAddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B1AC31905ABF2007EF3AE /* NYUAddUserViewController.m */; };
+		ED5DCBD91905CDF100713E93 /* NYUJoinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5DCBD81905CDF100713E93 /* NYUJoinTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,6 @@
 		D773B19618F09A19003D49C2 /* NYUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYUAppDelegate.h; sourceTree = "<group>"; };
 		D773B19718F09A19003D49C2 /* NYUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYUAppDelegate.m; sourceTree = "<group>"; };
 		D773B19A18F09A19003D49C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		D773B19D18F09A19003D49C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		D773B19F18F09A19003D49C2 /* NYUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYUViewController.h; sourceTree = "<group>"; };
 		D773B1A018F09A19003D49C2 /* NYUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYUViewController.m; sourceTree = "<group>"; };
 		D773B1A218F09A19003D49C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -64,12 +64,16 @@
 		D773B1B118F09A1A003D49C2 /* SplitItTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplitItTests-Info.plist"; sourceTree = "<group>"; };
 		D773B1B318F09A1A003D49C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D773B1B518F09A1A003D49C2 /* SplitItTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitItTests.m; sourceTree = "<group>"; };
-		D773B1BF18F0A91F003D49C2 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../Firebase.framework; sourceTree = "<group>"; };
 		D773B1C118F0A99C003D49C2 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		D773B1C318F0A9A9003D49C2 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		D773B1C518F0A9B1003D49C2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D773B1C718F0A9B8003D49C2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D773B1C918F0A9C2003D49C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ED5B1AC01905A5EC007EF3AE /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		ED5B1AC21905ABF2007EF3AE /* NYUAddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUAddUserViewController.h; sourceTree = "<group>"; };
+		ED5B1AC31905ABF2007EF3AE /* NYUAddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUAddUserViewController.m; sourceTree = "<group>"; };
+		ED5DCBD71905CDF100713E93 /* NYUJoinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUJoinTableViewController.h; sourceTree = "<group>"; };
+		ED5DCBD81905CDF100713E93 /* NYUJoinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUJoinTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +86,10 @@
 				D773B1C618F0A9B1003D49C2 /* CFNetwork.framework in Frameworks */,
 				D773B1C418F0A9A9003D49C2 /* libc++.dylib in Frameworks */,
 				D773B1C218F0A99C003D49C2 /* libicucore.dylib in Frameworks */,
+				ED5B1AC11905A5EC007EF3AE /* Firebase.framework in Frameworks */,
 				D773B18A18F09A19003D49C2 /* CoreGraphics.framework in Frameworks */,
 				D773B18C18F09A19003D49C2 /* UIKit.framework in Frameworks */,
 				D773B18818F09A19003D49C2 /* Foundation.framework in Frameworks */,
-				D773B1C018F0A91F003D49C2 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +113,7 @@
 				D773B1AF18F09A1A003D49C2 /* SplitItTests */,
 				D773B18618F09A19003D49C2 /* Frameworks */,
 				D773B18518F09A19003D49C2 /* Products */,
+				D773B19918F09A19003D49C2 /* Main_iPhone.storyboard */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,7 +134,7 @@
 				D773B1C518F0A9B1003D49C2 /* CFNetwork.framework */,
 				D773B1C318F0A9A9003D49C2 /* libc++.dylib */,
 				D773B1C118F0A99C003D49C2 /* libicucore.dylib */,
-				D773B1BF18F0A91F003D49C2 /* Firebase.framework */,
+				ED5B1AC01905A5EC007EF3AE /* Firebase.framework */,
 				D773B18718F09A19003D49C2 /* Foundation.framework */,
 				D773B18918F09A19003D49C2 /* CoreGraphics.framework */,
 				D773B18B18F09A19003D49C2 /* UIKit.framework */,
@@ -143,8 +148,10 @@
 			children = (
 				D773B19618F09A19003D49C2 /* NYUAppDelegate.h */,
 				D773B19718F09A19003D49C2 /* NYUAppDelegate.m */,
-				D773B19918F09A19003D49C2 /* Main_iPhone.storyboard */,
-				D773B19C18F09A19003D49C2 /* Main_iPad.storyboard */,
+				ED5DCBD71905CDF100713E93 /* NYUJoinTableViewController.h */,
+				ED5DCBD81905CDF100713E93 /* NYUJoinTableViewController.m */,
+				ED5B1AC21905ABF2007EF3AE /* NYUAddUserViewController.h */,
+				ED5B1AC31905ABF2007EF3AE /* NYUAddUserViewController.m */,
 				D773B19F18F09A19003D49C2 /* NYUViewController.h */,
 				D773B1A018F09A19003D49C2 /* NYUViewController.m */,
 				D773B1A218F09A19003D49C2 /* Images.xcassets */,
@@ -264,7 +271,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D773B19E18F09A19003D49C2 /* Main_iPad.storyboard in Resources */,
 				D773B1A318F09A19003D49C2 /* Images.xcassets in Resources */,
 				D773B19B18F09A19003D49C2 /* Main_iPhone.storyboard in Resources */,
 				D773B19218F09A19003D49C2 /* InfoPlist.strings in Resources */,
@@ -288,7 +294,9 @@
 			files = (
 				D773B19418F09A19003D49C2 /* main.m in Sources */,
 				D773B19818F09A19003D49C2 /* NYUAppDelegate.m in Sources */,
+				ED5DCBD91905CDF100713E93 /* NYUJoinTableViewController.m in Sources */,
 				D72171A818F7327D00A75369 /* NYUTableViewController.m in Sources */,
+				ED5B1AC41905ABF2007EF3AE /* NYUAddUserViewController.m in Sources */,
 				D773B1A118F09A19003D49C2 /* NYUViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,14 +334,7 @@
 				D773B19A18F09A19003D49C2 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		D773B19C18F09A19003D49C2 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D773B19D18F09A19003D49C2 /* Base */,
-			);
-			name = Main_iPad.storyboard;
+			path = SplitIt;
 			sourceTree = "<group>";
 		};
 		D773B1B218F09A1A003D49C2 /* InfoPlist.strings */ = {
@@ -431,6 +432,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jaimindoshi/Desktop,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SplitIt/SplitIt-Prefix.pch";
@@ -452,6 +454,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jaimindoshi/Desktop,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SplitIt/SplitIt-Prefix.pch";

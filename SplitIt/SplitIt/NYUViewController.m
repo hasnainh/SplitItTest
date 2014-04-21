@@ -7,6 +7,8 @@
 //
 
 #import "NYUViewController.h"
+#import "NYUJoinTableViewController.h"
+
 #import <limits.h>
 #import <Firebase/Firebase.h>
 
@@ -18,9 +20,16 @@
 
 @implementation NYUViewController
 
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"joinTableSegue"])
+    {
+        NYUJoinTableViewController * aTable = (NYUJoinTableViewController *) segue.destinationViewController;
+        aTable.tableID = self.tableID.text;
+    }
+}
 
-
-- (IBAction)generateRandomInt:(id)sender {
+-(IBAction)generateRandomInt:(id)sender {
     int randomIndex= arc4random() % [randomInt count];
     NSNumber* remove= [randomInt objectAtIndex:randomIndex];
     [randomInt removeObjectAtIndex:randomIndex];
@@ -35,7 +44,25 @@
     
 }
 
-- (void)viewDidLoad
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    //if they presss return then it hides the keyboard
+    if (textField == self.tableID) {
+        bool success = [self.tableID resignFirstResponder];
+        return success;
+    }else {
+        return NO;
+    }
+    
+    
+}
+
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    //IF they touch anywhere else it hides the keyboard
+    [self.tableID resignFirstResponder];
+}
+
+-(void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -59,4 +86,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+
+- (IBAction)joinTableButton:(id)sender {
+    
+    NSString * tableID= self.tableID.text;
+    [self.tableID resignFirstResponder];
+    [self performSegueWithIdentifier:@"joinTableSegue" sender:tableID];
+}
 @end

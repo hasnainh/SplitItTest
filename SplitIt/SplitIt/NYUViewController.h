@@ -15,7 +15,12 @@
     NSMutableString* urlWithID;
     NSNumber *tableNumber;
     
+    
 }
+
+@property (weak, nonatomic) IBOutlet UITextField *tableID;
+- (IBAction)joinTableButton:(id)sender;
+
 
 
 @end
