@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D72171A818F7327D00A75369 /* NYUTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72171A718F7327D00A75369 /* NYUTableViewController.m */; };
+		D73D0A4C190D5C19001183BB /* NYUTaxnTipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73D0A4B190D5C19001183BB /* NYUTaxnTipViewController.m */; };
 		D773B18818F09A19003D49C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B18718F09A19003D49C2 /* Foundation.framework */; };
 		D773B18A18F09A19003D49C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B18918F09A19003D49C2 /* CoreGraphics.framework */; };
 		D773B18C18F09A19003D49C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B18B18F09A19003D49C2 /* UIKit.framework */; };
@@ -27,9 +27,20 @@
 		D773B1C618F0A9B1003D49C2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B1C518F0A9B1003D49C2 /* CFNetwork.framework */; };
 		D773B1C818F0A9B8003D49C2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B1C718F0A9B8003D49C2 /* Security.framework */; };
 		D773B1CA18F0A9C2003D49C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D773B1C918F0A9C2003D49C2 /* SystemConfiguration.framework */; };
+		D7A3D9BC19206C6E004B1A23 /* NYUFinalReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3D9BB19206C6E004B1A23 /* NYUFinalReceiptViewController.m */; };
+		ED4522911906CE8000DCDB66 /* NYUUserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4522901906CE8000DCDB66 /* NYUUserDetailViewController.m */; };
+		ED452294190702C500DCDB66 /* NYUfoodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = ED452293190702C500DCDB66 /* NYUfoodDetails.m */; };
+		ED4522971907239F00DCDB66 /* NYUPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4522961907239F00DCDB66 /* NYUPerson.m */; };
 		ED5B1AC11905A5EC007EF3AE /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5B1AC01905A5EC007EF3AE /* Firebase.framework */; };
 		ED5B1AC41905ABF2007EF3AE /* NYUAddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B1AC31905ABF2007EF3AE /* NYUAddUserViewController.m */; };
 		ED5DCBD91905CDF100713E93 /* NYUJoinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5DCBD81905CDF100713E93 /* NYUJoinTableViewController.m */; };
+		EDADB523191DD23C00ABD116 /* NYUJoinTableUserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDADB522191DD23C00ABD116 /* NYUJoinTableUserDetailViewController.m */; };
+		EDBE105E1922A326001EDE08 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBE10581922A326001EDE08 /* Icon-40.png */; };
+		EDBE105F1922A326001EDE08 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBE10591922A326001EDE08 /* Icon-40@2x.png */; };
+		EDBE10601922A326001EDE08 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBE105A1922A326001EDE08 /* Icon-60.png */; };
+		EDBE10611922A326001EDE08 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBE105B1922A326001EDE08 /* Icon-60@2x.png */; };
+		EDBE10621922A326001EDE08 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBE105C1922A326001EDE08 /* Icon-Small.png */; };
+		EDBE10631922A326001EDE08 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDBE105D1922A326001EDE08 /* Icon-Small@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D72171A618F7327D00A75369 /* NYUTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUTableViewController.h; sourceTree = "<group>"; };
-		D72171A718F7327D00A75369 /* NYUTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUTableViewController.m; sourceTree = "<group>"; };
+		D73D0A4A190D5C19001183BB /* NYUTaxnTipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUTaxnTipViewController.h; sourceTree = "<group>"; };
+		D73D0A4B190D5C19001183BB /* NYUTaxnTipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUTaxnTipViewController.m; sourceTree = "<group>"; };
 		D773B18418F09A19003D49C2 /* SplitIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D773B18718F09A19003D49C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D773B18918F09A19003D49C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,11 +80,27 @@
 		D773B1C518F0A9B1003D49C2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D773B1C718F0A9B8003D49C2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D773B1C918F0A9C2003D49C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D7A3D9BA19206C6E004B1A23 /* NYUFinalReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUFinalReceiptViewController.h; sourceTree = "<group>"; };
+		D7A3D9BB19206C6E004B1A23 /* NYUFinalReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUFinalReceiptViewController.m; sourceTree = "<group>"; };
+		ED45228F1906CE8000DCDB66 /* NYUUserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUUserDetailViewController.h; sourceTree = "<group>"; };
+		ED4522901906CE8000DCDB66 /* NYUUserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUUserDetailViewController.m; sourceTree = "<group>"; };
+		ED452292190702C500DCDB66 /* NYUfoodDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUfoodDetails.h; sourceTree = "<group>"; };
+		ED452293190702C500DCDB66 /* NYUfoodDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUfoodDetails.m; sourceTree = "<group>"; };
+		ED4522951907239F00DCDB66 /* NYUPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUPerson.h; sourceTree = "<group>"; };
+		ED4522961907239F00DCDB66 /* NYUPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUPerson.m; sourceTree = "<group>"; };
 		ED5B1AC01905A5EC007EF3AE /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		ED5B1AC21905ABF2007EF3AE /* NYUAddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUAddUserViewController.h; sourceTree = "<group>"; };
 		ED5B1AC31905ABF2007EF3AE /* NYUAddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUAddUserViewController.m; sourceTree = "<group>"; };
 		ED5DCBD71905CDF100713E93 /* NYUJoinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUJoinTableViewController.h; sourceTree = "<group>"; };
 		ED5DCBD81905CDF100713E93 /* NYUJoinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUJoinTableViewController.m; sourceTree = "<group>"; };
+		EDADB521191DD23C00ABD116 /* NYUJoinTableUserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUJoinTableUserDetailViewController.h; sourceTree = "<group>"; };
+		EDADB522191DD23C00ABD116 /* NYUJoinTableUserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUJoinTableUserDetailViewController.m; sourceTree = "<group>"; };
+		EDBE10581922A326001EDE08 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		EDBE10591922A326001EDE08 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		EDBE105A1922A326001EDE08 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		EDBE105B1922A326001EDE08 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		EDBE105C1922A326001EDE08 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		EDBE105D1922A326001EDE08 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,14 +177,30 @@
 				D773B19718F09A19003D49C2 /* NYUAppDelegate.m */,
 				ED5DCBD71905CDF100713E93 /* NYUJoinTableViewController.h */,
 				ED5DCBD81905CDF100713E93 /* NYUJoinTableViewController.m */,
+				EDADB521191DD23C00ABD116 /* NYUJoinTableUserDetailViewController.h */,
+				EDADB522191DD23C00ABD116 /* NYUJoinTableUserDetailViewController.m */,
 				ED5B1AC21905ABF2007EF3AE /* NYUAddUserViewController.h */,
 				ED5B1AC31905ABF2007EF3AE /* NYUAddUserViewController.m */,
+				ED45228F1906CE8000DCDB66 /* NYUUserDetailViewController.h */,
+				ED4522901906CE8000DCDB66 /* NYUUserDetailViewController.m */,
+				ED4522951907239F00DCDB66 /* NYUPerson.h */,
+				ED4522961907239F00DCDB66 /* NYUPerson.m */,
+				ED452292190702C500DCDB66 /* NYUfoodDetails.h */,
+				ED452293190702C500DCDB66 /* NYUfoodDetails.m */,
 				D773B19F18F09A19003D49C2 /* NYUViewController.h */,
 				D773B1A018F09A19003D49C2 /* NYUViewController.m */,
+				D73D0A4A190D5C19001183BB /* NYUTaxnTipViewController.h */,
+				D73D0A4B190D5C19001183BB /* NYUTaxnTipViewController.m */,
+				D7A3D9BA19206C6E004B1A23 /* NYUFinalReceiptViewController.h */,
+				D7A3D9BB19206C6E004B1A23 /* NYUFinalReceiptViewController.m */,
 				D773B1A218F09A19003D49C2 /* Images.xcassets */,
+				EDBE10581922A326001EDE08 /* Icon-40.png */,
+				EDBE10591922A326001EDE08 /* Icon-40@2x.png */,
+				EDBE105A1922A326001EDE08 /* Icon-60.png */,
+				EDBE105B1922A326001EDE08 /* Icon-60@2x.png */,
+				EDBE105C1922A326001EDE08 /* Icon-Small.png */,
+				EDBE105D1922A326001EDE08 /* Icon-Small@2x.png */,
 				D773B18E18F09A19003D49C2 /* Supporting Files */,
-				D72171A618F7327D00A75369 /* NYUTableViewController.h */,
-				D72171A718F7327D00A75369 /* NYUTableViewController.m */,
 			);
 			path = SplitIt;
 			sourceTree = "<group>";
@@ -271,9 +314,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBE10621922A326001EDE08 /* Icon-Small.png in Resources */,
+				EDBE105E1922A326001EDE08 /* Icon-40.png in Resources */,
 				D773B1A318F09A19003D49C2 /* Images.xcassets in Resources */,
+				EDBE10631922A326001EDE08 /* Icon-Small@2x.png in Resources */,
+				EDBE10601922A326001EDE08 /* Icon-60.png in Resources */,
+				EDBE10611922A326001EDE08 /* Icon-60@2x.png in Resources */,
 				D773B19B18F09A19003D49C2 /* Main_iPhone.storyboard in Resources */,
 				D773B19218F09A19003D49C2 /* InfoPlist.strings in Resources */,
+				EDBE105F1922A326001EDE08 /* Icon-40@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +341,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDADB523191DD23C00ABD116 /* NYUJoinTableUserDetailViewController.m in Sources */,
+				ED4522971907239F00DCDB66 /* NYUPerson.m in Sources */,
 				D773B19418F09A19003D49C2 /* main.m in Sources */,
+				D73D0A4C190D5C19001183BB /* NYUTaxnTipViewController.m in Sources */,
 				D773B19818F09A19003D49C2 /* NYUAppDelegate.m in Sources */,
+				ED4522911906CE8000DCDB66 /* NYUUserDetailViewController.m in Sources */,
 				ED5DCBD91905CDF100713E93 /* NYUJoinTableViewController.m in Sources */,
-				D72171A818F7327D00A75369 /* NYUTableViewController.m in Sources */,
+				ED452294190702C500DCDB66 /* NYUfoodDetails.m in Sources */,
+				D7A3D9BC19206C6E004B1A23 /* NYUFinalReceiptViewController.m in Sources */,
 				ED5B1AC41905ABF2007EF3AE /* NYUAddUserViewController.m in Sources */,
 				D773B1A118F09A19003D49C2 /* NYUViewController.m in Sources */,
 			);

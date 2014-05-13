@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4DA47496-C113-4DFE-A557-1824754CCCE2</string>
+	<string>EA3CAA09-B35F-4510-8870-A5D4585D1C1A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SplitIt</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6610832D-2C32-4D08-BF19-7483D0FD1091</key>
-		<string>https://github.com/Jaimindoshi/SplitItTest.git</string>
+		<key>A4BBF697-66B5-4E91-8738-0B649AC45998</key>
+		<string>ssh://github.com/Jaimindoshi/SplitItTest.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SplitIt/SplitIt.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6610832D-2C32-4D08-BF19-7483D0FD1091</key>
+		<key>A4BBF697-66B5-4E91-8738-0B649AC45998</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Jaimindoshi/SplitItTest.git</string>
+	<string>ssh://github.com/Jaimindoshi/SplitItTest.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6610832D-2C32-4D08-BF19-7483D0FD1091</string>
+	<string>A4BBF697-66B5-4E91-8738-0B649AC45998</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6610832D-2C32-4D08-BF19-7483D0FD1091</string>
+			<string>A4BBF697-66B5-4E91-8738-0B649AC45998</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SplitItTest</string>
 		</dict>

@@ -8,7 +8,8 @@
 
 #import "NYUViewController.h"
 #import "NYUJoinTableViewController.h"
-
+#import "NYUUserDetailViewController.h"
+#import "NYUAddUserViewController.h"
 #import <limits.h>
 #import <Firebase/Firebase.h>
 
@@ -27,22 +28,15 @@
         NYUJoinTableViewController * aTable = (NYUJoinTableViewController *) segue.destinationViewController;
         aTable.tableID = self.tableID.text;
     }
+    //createTableSegue
+    
+    if([segue.identifier isEqualToString:@"createTableSegue"])
+    {
+        NYUAddUserViewController * bTable = (NYUAddUserViewController *) segue.destinationViewController;
+        bTable.tableNumber = self.tableNumber;
+    }
 }
 
--(IBAction)generateRandomInt:(id)sender {
-    int randomIndex= arc4random() % [randomInt count];
-    NSNumber* remove= [randomInt objectAtIndex:randomIndex];
-    [randomInt removeObjectAtIndex:randomIndex];
-    
-    tableNumber=remove; //This is to set the const table number
-    
-    
-    [urlWithID appendString:[NSString stringWithFormat:@"%@", remove]];
-    //NSLog(urlWithID);
-
-    
-    
-}
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -56,6 +50,24 @@
     
     
 }
+- (IBAction)join:(id)sender {
+    if ([_tableID.text length]>0) {
+        NSString * tableID= self.tableID.text;
+        //        Firebase* f = [[Firebase alloc] initWithUrl:[NSString stringWithFormat:@"%@%@", _urlWithID, tableID]];
+        //        [f observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+        //            if(!(snapshot.value == [NSNull null])) {
+        //                //NSLog(@"Table does exist");
+        //                //[_joinTableButton setEnabled:YES];
+        //                [self.tableID resignFirstResponder];
+        //                [self performSegueWithIdentifier:@"joinTableSegue" sender:tableID];
+        //
+        //            }
+        //        }];
+        [self.tableID resignFirstResponder];
+        [self performSegueWithIdentifier:@"joinTableSegue" sender:tableID];
+        
+    }
+}
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     //IF they touch anywhere else it hides the keyboard
@@ -65,13 +77,15 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"SplitIt!";
 	// Do any additional setup after loading the view, typically from a nib.
-    randomInt= [[NSMutableArray alloc]init];
+    self.randomInt= [[NSMutableArray alloc]init];
     for(int i=0; i<100; i++){
-        [randomInt addObject:[NSNumber numberWithInt:i]];
+        [self.randomInt addObject:[NSNumber numberWithInt:i]];
     }
     
-    urlWithID= [[NSMutableString alloc]initWithString:@"https://cs394.firebaseio.com/"];
+    self.urlWithID= [[NSMutableString alloc]initWithString:@"https://cs394.firebaseio.com/"];
+    
     
     
     
@@ -89,10 +103,22 @@
 
 
 
-- (IBAction)joinTableButton:(id)sender {
+
+- (IBAction)create:(id)sender {
+    int randomIndex= arc4random() % [self.randomInt count];
+    NSNumber* remove= [self.randomInt objectAtIndex:randomIndex];
+    [self.randomInt removeObjectAtIndex:randomIndex];
     
-    NSString * tableID= self.tableID.text;
-    [self.tableID resignFirstResponder];
-    [self performSegueWithIdentifier:@"joinTableSegue" sender:tableID];
+    self.tableNumber=remove; //This is to set the const table number
+    
+    
+    [self.urlWithID appendString:[NSString stringWithFormat:@"%@", remove]];
+    //    self.urlWithID = [[NSMutableString alloc]initWithString:@"https://splitbill.firebaseio.com/"];
+    //    [self.urlWithID appendString:[NSString stringWithFormat:@"%@/TaxTip/", self.tableNumber]];
+    //    Firebase* f1=[[Firebase alloc]initWithUrl:_urlWithID];
+    //    [[f1 childByAppendingPath:[NSString stringWithFormat:@"Tax"]] setValue:[NSNumber numberWithDouble:0]];
+    //    [[f1 childByAppendingPath:[NSString stringWithFormat:@"Tip"]] setValue:[NSNumber numberWithDouble:0]];
+    [self performSegueWithIdentifier:@"createTableSegue" sender:remove];
 }
+
 @end

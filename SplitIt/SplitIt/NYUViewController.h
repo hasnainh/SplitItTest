@@ -8,18 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NYUViewController : UIViewController{
+@interface NYUViewController : UIViewController
 
-    NSMutableArray* randomInt;
-    
-    NSMutableString* urlWithID;
-    NSNumber *tableNumber;
-    
-    
-}
+@property (nonatomic,strong)NSMutableArray* randomInt;
+@property (nonatomic,strong)NSMutableString* urlWithID;
+@property (nonatomic,strong)NSNumber *tableNumber;
+
 
 @property (weak, nonatomic) IBOutlet UITextField *tableID;
-- (IBAction)joinTableButton:(id)sender;
+
 
 
 
