@@ -53,8 +53,6 @@
     [self.tipSlider setValue:5.0];
     _finalTotal = 0.0;
     // Do any additional setup after loading the view.
-    //NSLog(_tableURL);
-    //Firebase* f=
     //-------------- Look into a child of child to add all the values of the users! does it live!
     __block double total=0;
     __block double tax = 0;
@@ -64,7 +62,6 @@
         [f1 observeEventType:FEventTypeChildAdded withBlock:^(FDataSnapshot *snapshot) {
             
             NSString* foodValue= [NSString stringWithFormat:@"%@/%@/",_tableURL, snapshot.name];
-            //NSLog(foodValue);
             //--------
             
             Firebase* f2=[[Firebase alloc]initWithUrl:foodValue];
@@ -74,7 +71,6 @@
                     
                     NSString* foodValue= snapshot.value;
                     (total)+=[foodValue doubleValue];
-                    //NSLog(@"%f",total);
                     [self.showTotal setText:[NSString stringWithFormat:@"%0.2f", total]];
                     
                 }
@@ -98,7 +94,6 @@
                     
                     NSString* foodValue= snapshot.value;
                     (total)-=[foodValue doubleValue];
-                    //NSLog(@"%f",total);
                     [self.showTotal setText:[NSString stringWithFormat:@"%0.2f", total]];
                 }
             }];
@@ -139,11 +134,6 @@
         
         NSString* temp= [NSString stringWithFormat:@"%@/%@/",_tableURL, snapshot.name];
         Firebase* updateTax2=[[Firebase alloc]initWithUrl:temp];
-        //        [updateTax2 observeEventType:FEventTypeChildAdded withBlock:^(FDataSnapshot *snapshot) {
-        //            //[updateTax2 updateChildValues:@{@"tax": @[@"%0.2f" ,taxBox]}];
-        //
-        //
-        //        }];
         [updateTax2 updateChildValues:@{@"tax": [NSNumber numberWithDouble:taxBox]}];
         [updateTax2 updateChildValues:@{@"tip": [NSNumber numberWithDouble:tipValue]}];
     }];

@@ -3,6 +3,8 @@
 //  SplitIt
 //
 //  Created by Jaimin Doshi on 4/5/14.
+//  Created by Shalin Shah on 4/5/14.
+//  Created by Hasnain Hossain on 4/5/14.
 //  Copyright (c) 2014 Jaimin Doshi. All rights reserved.
 //
 
@@ -89,8 +91,7 @@
     
     
     
-//    // Create a reference to a Firebase location
-//    Firebase* f = [[Firebase alloc] initWithUrl:@"https://cs394.firebaseio.com/"];
+
 //
 }
 

@@ -101,8 +101,7 @@
 #pragma mark - UITableView Data Source
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    //return [self.person.foodItems count];
-    //NSLog([NSString stringWithFormat:@"%d", [self.users count]]);
+
     return [self.users count];
 }
 
@@ -115,10 +114,9 @@
     
     [cell.textLabel setText:[NSString stringWithFormat:@"%@",self.users[indexPath.row]]];
 
-    //UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:nil forIndexPath:indexPath];
     __block double total=0;
     NSString* tempURL=[NSString stringWithFormat:@"%@%@",_tableURL,self.users[indexPath.row]];
-    //NSLog(@"IN tbale view %@",tempURL);
+
     // Calculates the total for each person and puts their total in the detail text label
     
     Firebase* f1=[[Firebase alloc]initWithUrl:tempURL];
